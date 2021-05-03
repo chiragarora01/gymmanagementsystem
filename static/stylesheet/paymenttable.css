@@ -1,0 +1,6 @@
+.table_header:nth-child(even){
+    background-color: #777777;
+}
+body{
+    background-color: #ff105f;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='stylesheet/paymenttable.css')}}" />
+</head>
+<body>
+<a href="payment">payment</a>
+<h1>welcome admin!</h1>
+<table class="table">
+    <tr class="table_header">
+        {% for header in headings %}
+        <th class="table_cell">{{ header }}</th>
+        {% endfor %}
+    </tr>
+    {% for row in data %}
+    <tr class="table_row">
+        {% for cell in row %}
+        <td class="table_cell">{{ cell }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+
+</table>
+</body>
+</html>
